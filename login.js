@@ -148,12 +148,12 @@ const _0xf24905 = _0x1ee66e(this, function () {
 _0xf24905();
 document.getElementById("login-button").addEventListener('click', function () {
   const _0x3e9808 = document.getElementById("user-number-input").value;
-  fetch("https://htmltestwebsite382938293829.netlify.app/.netlify/functions/getUserData?number=" + _0x3e9808).then(_0x39a97a => _0x39a97a.json()).then(_0x5ed2f6 => {
+  fetch("https://htmltestwebsite.netlify.app/.netlify/functions/getUserData?number=" + _0x3e9808).then(_0x39a97a => _0x39a97a.json()).then(_0x5ed2f6 => {
     if (_0x5ed2f6 && !_0x5ed2f6.msg) {
       localStorage.setItem("userData", JSON.stringify(_0x5ed2f6));
       window.location.href = "index.html";
     } else {
-      alert("Fel kod!");
+      alert("Fel kode!");
     }
   })["catch"](_0x47e524 => {
     console.error("Error:", _0x47e524);
